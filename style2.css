@@ -36,7 +36,7 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    
+
     top: 5px;
     right: 50px;
     
@@ -287,7 +287,7 @@ iframe{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 /*button burger*/
     .burger {
@@ -377,8 +377,8 @@ iframe{
     height: 0;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
 }
 .home_border{
     border-bottom: solid #f76900 ;
@@ -398,6 +398,7 @@ iframe{
    
 }
 #header_navbar.active {
+    
     height: 100%;
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
@@ -408,6 +409,7 @@ iframe{
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 10px;
+    
 }
 .header-navlinks li,
 a {
@@ -502,7 +504,12 @@ a {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(100px,1fr)); 
     gap: 10px;
-    margin-left: 30px;
+    
+    
+}
+iframe{
+width: 100%;
+height: auto;
 }
 
 /*footer*/
@@ -527,18 +534,20 @@ footer{
      top: 10px;  
     
  }
- .footer_navlinks h4{
-     font-size: 18px;
-     margin-bottom: 15px;
-     margin-left: 10px;
+ .title_footer{
+    font-size: 18px;
+    
+    margin-left: 10px;   
  }
+ 
  .footer_navlinks li, i{
      display: flex;
      justify-content: left;
      align-items: center;
      font-size: 14px;
-     margin: 2% 5%;
+     margin: 2px 2%;
      font-weight: 400;      
+     
  }
 .footer_navbar_div_twitter{
     
@@ -547,9 +556,7 @@ footer{
 }
 
 .footer_navbar_div_twitter h4{
-    font-size: 18px;
     
-    margin-left: 10px;
 }
 .footer_navbar_div_twitter  p{
     
@@ -565,9 +572,7 @@ footer{
     
 }
 .footer_navbar_div_recentposts h4{
-    font-size: 18px;
     
-    margin-left: 10px;
 }
 .footer_navbar_div_recentposts h5{
     font-size: 14px;
@@ -584,9 +589,7 @@ footer{
 }
 
 .footer_navbar_div_widgetized h4{
-    font-size: 18px;
-    
-    margin-left: 10px;
+  
 }
 .footer_navbar_div_widgetized p{
     justify-content: left;
@@ -605,6 +608,9 @@ footer{
     background-color: #ffffff;
     width: 100%;
     height: auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fit minmax(50px, 1fr));
+    
 }
 
 .footer_information li, a{
@@ -614,12 +620,17 @@ footer{
     font-size: 1.5vh;
     
 }
+.footer_information_nav a{
+  border-right: solid 2px;  
+  padding-right: 5px;
+}
 .footer_information_links{
     display: flex;
     justify-content: flex-start;
+    
 }
 .logo_resaux{
-    position: absolute;
+    
     display: flex;
     top: 0%;
     right: 5%;
